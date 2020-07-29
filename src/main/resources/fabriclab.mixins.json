@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.bitnet.fabriclab.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "FabricLabMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
