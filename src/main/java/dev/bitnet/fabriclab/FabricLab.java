@@ -1,5 +1,6 @@
 package dev.bitnet.fabriclab;
 
+import dev.bitnet.fabriclab.entity.ModEntities;
 import dev.bitnet.fabriclab.items.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -17,5 +18,6 @@ public class FabricLab implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerItems();
+		ModEntities.registerEntityAttributes();
 	}
 }
