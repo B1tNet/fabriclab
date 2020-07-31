@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "dev.bitnet.fabriclab.FabricLab"
+    ],
+    "client": [
+      "dev.bitnet.fabriclab.client.ClientInitializer"
     ]
   },
   "mixins": [

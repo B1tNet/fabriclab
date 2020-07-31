@@ -1,5 +1,7 @@
 {
   "itemGroup.fabriclab.itemgroup": "FabricLab",
 
-  "item.fabriclab.basic_item": "Basic Item"
+  "item.fabriclab.basic_item": "Basic Item",
+
+  "entity.fabriclab.basic_cube": "Basic Cube"
 }
