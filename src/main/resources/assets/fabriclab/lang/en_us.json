@@ -3,5 +3,6 @@
 
   "item.fabriclab.basic_item": "Basic Item",
 
-  "entity.fabriclab.basic_cube": "Basic Cube"
+  "entity.fabriclab.basic_cube": "Basic Cube",
+  "entity.fabriclab.color_changing_cube": "Color Changing Cube"
 }

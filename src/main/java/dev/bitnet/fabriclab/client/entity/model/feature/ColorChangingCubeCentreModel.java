@@ -10,6 +10,9 @@ public class ColorChangingCubeCentreModel extends EntityModel<ColorChangingCubeE
     private ModelPart base;
 
     public ColorChangingCubeCentreModel() {
+        textureHeight = 28;
+        textureWidth = 56;
+
         base = new ModelPart(this, 0, 0);
         base.addCuboid(-7,-7,-7, 14, 14, 14);
     }

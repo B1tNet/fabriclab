@@ -10,8 +10,10 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.util.Identifier;
 
+import static dev.bitnet.fabriclab.FabricLab.MODID;
+
 public class ColorChangingCubeCentreFeatureRenderer extends FeatureRenderer<ColorChangingCubeEntity, ColorChangingCubeEntityModel> {
-    private static final Identifier TEXTURE = new Identifier("minecraft", "textures/block/white_wool.png");
+    private static final Identifier TEXTURE = new Identifier(MODID, "textures/entity/color_changing_cube/core.png");
     private final ColorChangingCubeCentreModel MODEL = new ColorChangingCubeCentreModel();
 
     public ColorChangingCubeCentreFeatureRenderer(FeatureRendererContext<ColorChangingCubeEntity, ColorChangingCubeEntityModel> context) {
