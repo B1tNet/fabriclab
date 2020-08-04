@@ -10,5 +10,6 @@ public class ClientInitializer implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModEntities.registerEntityRenderers();
+        ModModelPredicateProviderRegistry.registerModelPredicates();
     }
 }

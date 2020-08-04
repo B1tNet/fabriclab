@@ -2,6 +2,7 @@
   "itemGroup.fabriclab.itemgroup": "FabricLab",
 
   "item.fabriclab.basic_item": "Basic Item",
+  "item.fabriclab.texture_changing_item": "Texture Changing Item",
 
   "entity.fabriclab.basic_cube": "Basic Cube",
   "entity.fabriclab.color_changing_cube": "Color Changing Cube"

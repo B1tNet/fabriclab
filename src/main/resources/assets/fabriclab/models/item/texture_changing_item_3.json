@@ -1,0 +1,6 @@
+{
+  "parent": "fabriclab:item/texture_changing_item",
+  "textures": {
+    "layer0": "fabriclab:item/texture_changing_item_3"
+  }
+}

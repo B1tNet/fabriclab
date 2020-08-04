@@ -1,0 +1,51 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "fabriclab:item/texture_changing_item"
+  },
+
+  "overrides": [
+    {
+      "predicate": {
+        "fabriclab:count": 2
+      },
+      "model": "fabriclab:item/texture_changing_item_2"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 3
+      },
+      "model": "fabriclab:item/texture_changing_item_3"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 4
+      },
+      "model": "fabriclab:item/texture_changing_item_4"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 5
+      },
+      "model": "fabriclab:item/texture_changing_item_5"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 6
+      },
+      "model": "fabriclab:item/texture_changing_item_6"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 7
+      },
+      "model": "fabriclab:item/texture_changing_item_7"
+    },
+    {
+      "predicate": {
+        "fabriclab:count": 8
+      },
+      "model": "fabriclab:item/texture_changing_item_8"
+    }
+  ]
+}
