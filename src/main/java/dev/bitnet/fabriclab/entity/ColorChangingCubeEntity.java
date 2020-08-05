@@ -38,45 +38,17 @@ public class ColorChangingCubeEntity extends PathAwareEntity {
 
         BlockPos posBelow = this.getBlockPos().add(0, -1, 0);
 
-        String blockSelected;
+        String blockSelectedTranslationKey;
         if (world.getBlockState(getBlockPos()).getBlock().getTranslationKey().contains("banner") || world.getBlockState(getBlockPos()).getBlock().getTranslationKey().contains("carpet")) {
-            blockSelected = world.getBlockState(getBlockPos()).getBlock().getTranslationKey();
+            blockSelectedTranslationKey = world.getBlockState(getBlockPos()).getBlock().getTranslationKey();
         } else {
-            blockSelected = world.getBlockState(posBelow).getBlock().getTranslationKey();
+            blockSelectedTranslationKey = world.getBlockState(posBelow).getBlock().getTranslationKey();
         }
 
-        if (blockSelected.contains("white")) {
-            setColor(DyeColor.WHITE);
-        } else if(blockSelected.contains("orange")) {
-            setColor(DyeColor.ORANGE);
-        } else if(blockSelected.contains("magenta")) {
-            setColor(DyeColor.MAGENTA);
-        } else if (blockSelected.contains("light_blue")) {
-            setColor(DyeColor.LIGHT_BLUE);
-        } else if (blockSelected.contains("yellow")) {
-            setColor(DyeColor.YELLOW);
-        } else if (blockSelected.contains("lime")) {
-            setColor(DyeColor.LIME);
-        } else if (blockSelected.contains("pink")) {
-            setColor(DyeColor.PINK);
-        } else if (blockSelected.contains("gray")) {
-            setColor(DyeColor.GRAY);
-        } else if (blockSelected.contains("light_gray")) {
-            setColor(DyeColor.LIGHT_GRAY);
-        } else if (blockSelected.contains("cyan")) {
-            setColor(DyeColor.CYAN);
-        } else if (blockSelected.contains("purple")) {
-            setColor(DyeColor.PURPLE);
-        } else if (blockSelected.contains("blue")) {
-            setColor(DyeColor.BLUE);
-        } else if (blockSelected.contains("brown")) {
-            setColor(DyeColor.BROWN);
-        } else if (blockSelected.contains("green")) {
-            setColor(DyeColor.GREEN);
-        } else if (blockSelected.contains("red")) {
-            setColor(DyeColor.RED);
-        } else if (blockSelected.contains("black")) {
-            setColor(DyeColor.BLACK);
+        for (DyeColor dyeColor : DyeColor.values()) {
+            if (blockSelectedTranslationKey.contains(dyeColor.getName())) {
+                setColor(dyeColor);
+            }
         }
     }
 
